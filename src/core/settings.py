@@ -147,7 +147,6 @@ SIMPLE_JWT = {
 }
 
 # DJOSER CONFIG
-
 DJOSER = {
     "LOGIN_FIELD": "email",
     "USER_CREATE_PASSWORD_RETYPE": True,
@@ -162,11 +161,11 @@ DJOSER = {
     "SEND_ACTIVATION_EMAIL": True,
     "SOCIAL_AUTH_TOKEN_STRATEGY": "djoser.social.token.jwt.TokenStrategy",
     "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": [
-        "https://superdjauth.herokuapp.com/google",
-        "https://superdjauth.herokuapp.com/facebook",
+        "your redirect url",
+        "your redirect url",
     ],
     "SERIALIZERS": {
-        "user_create": "accounts.serializers.UserCreateSerializer",
+        "user_create": "accounts.serializers.UserCreateSerializer",  # custom serializer
         "user": "djoser.serializers.UserSerializer",
         "current_user": "djoser.serializers.UserSerializer",
         "user_delete": "djoser.serializers.UserSerializer",
@@ -179,7 +178,8 @@ CORS_ALLOW_CREDENTIALS = True
 
 
 # EMAIL CONFIG
-EMAIL_HOST = "192.168.10.17"  # docker.for.mac.localhost
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "localhost"
 EMAIL_PORT = "1025"
 EMAIL_HOST_USER = ""
 EMAIL_HOST_PASSWORD = ""
