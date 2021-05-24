@@ -5,7 +5,9 @@ REST implementation of Django authentication system. djoser library provides a s
 Requirements:
 
 - Django
-- MailHog (email testing tool for developers)
+- [Poetry](https://python-poetry.org/docs/)
+- [MailHog](https://github.com/mailhog/MailHog) (email testing tool for developers)
+- [drf-yasg](https://drf-yasg.readthedocs.io/en/stable/)
 
 Project Setup:
 create a virtual env.
@@ -21,7 +23,8 @@ Here i am using poetry you can use pip or pienv:
 poetry Setup:
 
 ```
-    poetry init
-    poetry add django djangorestframework djoser djangorestframework_simplejwt django-cors-headers
-    poetry add drf-yasg # for api docs
+    poetry install
+
 ```
+
+finally migrate and run the project. 😄😄😄😄
