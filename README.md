@@ -5,7 +5,7 @@ REST implementation of Django authentication system. djoser library provides a s
 Requirements:
 
 - Django
-- MailHog (email testing tool for developers/requires golang to install)
+- MailHog (email testing tool for developers)
 
 Project Setup:
 create a virtual env.
