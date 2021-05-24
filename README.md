@@ -24,6 +24,7 @@ poetry Setup:
 
 ```
     poetry install
+    # install all dependencies
 
 ```
 
