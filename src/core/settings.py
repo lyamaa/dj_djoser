@@ -34,7 +34,6 @@ THIRD_PARTY_APPS = [
     "drf_yasg",
     "djoser",
     "corsheaders",
-    "social_django",
     "rest_framework_simplejwt",
     "rest_framework_simplejwt.token_blacklist",
 ]
@@ -43,7 +42,6 @@ INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
 
 MIDDLEWARE = [
-    "social_django.middleware.SocialAuthExceptionMiddleware",  # Middleware for social auth
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "corsheaders.middleware.CorsMiddleware",  # middleware for cors-headers
